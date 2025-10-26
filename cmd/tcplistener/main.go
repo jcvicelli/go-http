@@ -16,6 +16,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("error listening for TCP traffic: %s\n", err.Error())
 	}
+
 	defer listener.Close()
 
 	fmt.Println("Listening for TCP traffic on", port)
